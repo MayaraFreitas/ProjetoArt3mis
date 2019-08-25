@@ -31,12 +31,12 @@ public class ItemDatabase : MonoBehaviour
                     { "Power: ", 15 },
                     { "Defence", 10 }
                 }),
-            new Item(0, "Diamond Ore", "A beaultiful diamond.",
+            new Item(1, "Diamond Ore", "A beaultiful diamond.",
                 new Dictionary<string, int>
                 {
                     { "Value: ", 444 }
                 }),
-            new Item(0, "Silver Pick", "A very C# pick.",
+            new Item(2, "Silver Pick", "A very C# pick.",
                 new Dictionary<string, int>
                 {
                     { "Power: ", 5 },
