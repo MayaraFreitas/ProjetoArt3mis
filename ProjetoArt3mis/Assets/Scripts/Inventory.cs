@@ -13,7 +13,13 @@ public class Inventory : MonoBehaviour
         GiveItem("Diamond Sword");
         GiveItem(1);
         GiveItem(2);
-        RemoveItem(1);
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.I)){
+            inventoryUI.gameObject.SetActive(!inventoryUI.gameObject.activeSelf);
+        }
     }
 
     public void GiveItem(int id)
