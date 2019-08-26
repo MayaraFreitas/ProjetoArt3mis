@@ -63,6 +63,8 @@
     <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\ItemDatabase.cs" />
+    <Compile Include="Assets\Scripts\UIInventory.cs" />
+    <Compile Include="Assets\Scripts\UIItem.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Projetos/ProjetoArt3mis/ProjetoArt3mis/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
