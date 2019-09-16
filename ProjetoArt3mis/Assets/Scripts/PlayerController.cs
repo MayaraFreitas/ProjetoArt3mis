@@ -1,18 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed;
 
     private Animator anim;
+    private Inventory inventory;
 
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        inventory = GetComponentInParent<Inventory>();
     }
 
     // Update is called once per frame
@@ -30,5 +30,15 @@ public class PlayerController : MonoBehaviour
 
         anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
         anim.SetFloat("MoveY", Input.GetAxisRaw("Vertical"));
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Item")
+        {
+            inventory.GiveItem(collision.gameObject.name);
+            Destroy(collision.gameObject);
+        }
+
     }
 }

@@ -37,7 +37,6 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
             // Tem algum item selecionado?
             if (selectedItem.item != null)
             {
-                print(":)");
                 Item clone = new Item(selectedItem.item);
                 selectedItem.UpdateItem(this.item);
                 UpdateItem(clone);
@@ -58,7 +57,6 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        print("Entreiiii!");
         if (this.item != null)
         {
             tooltip.GenerateTooltip(this.item);
@@ -67,7 +65,6 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        print("Saiiii!!!");
         tooltip.gameObject.SetActive(false);
     }
 }

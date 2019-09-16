@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -13,6 +12,8 @@ public class Inventory : MonoBehaviour
         GiveItem("Diamond Sword");
         GiveItem(1);
         GiveItem(2);
+
+        inventoryUI.gameObject.SetActive(false);
     }
 
     private void Update()
