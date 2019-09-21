@@ -36,8 +36,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Item")
         {
-            inventory.GiveItem(collision.gameObject.name);
-            Destroy(collision.gameObject);
+            inventory.AddItem(collision.gameObject.name, collision.gameObject);
         }
 
     }

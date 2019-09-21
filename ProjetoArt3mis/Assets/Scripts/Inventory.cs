@@ -9,9 +9,9 @@ public class Inventory : MonoBehaviour
 
     private void Start()
     {
-        GiveItem("Diamond Sword");
-        GiveItem(1);
-        GiveItem(2);
+        AddItem("Diamond Sword");
+        AddItem(1);
+        AddItem(2);
 
         inventoryUI.gameObject.SetActive(false);
     }
@@ -23,17 +23,39 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void GiveItem(int id)
+    public void AddItem(int id)
     {
-        Item itemToAdd = itemDatabase.GetItem(id);
-        chacacterItems.Add(itemToAdd);
-        inventoryUI.AddNewItem(itemToAdd);
-        Debug.Log("Added item: " + itemToAdd.title);
+        if (chacacterItems.Count < inventoryUI.numberOfSlots)
+        {
+            Item itemToAdd = itemDatabase.GetItem(id);
+            addNewItem(itemToAdd);
+        }
+        else
+        {
+            print("INVENTARIO CHEIO :(");
+        }
+        
     }
 
-    public void GiveItem(string itemName)
+    public void AddItem(string itemName, GameObject obj = null)
     {
-        Item itemToAdd = itemDatabase.GetItem(itemName);
+        if (chacacterItems.Count < inventoryUI.numberOfSlots)
+        {
+            Item itemToAdd = itemDatabase.GetItem(itemName);
+            addNewItem(itemToAdd);
+            if (obj != null)
+            {
+                Destroy(obj);
+            }
+        }
+        else
+        {
+            print("INVENTARIO CHEIO :(");
+        }
+    }
+
+    private void addNewItem(Item itemToAdd)
+    {
         chacacterItems.Add(itemToAdd);
         inventoryUI.AddNewItem(itemToAdd);
         Debug.Log("Added item: " + itemToAdd.title);
