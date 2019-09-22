@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class UIInventory : MonoBehaviour
@@ -33,4 +34,5 @@ public class UIInventory : MonoBehaviour
     {
         UpdateSlot(uIItems.FindIndex(i => i.item == item), null);
     }
+
 }

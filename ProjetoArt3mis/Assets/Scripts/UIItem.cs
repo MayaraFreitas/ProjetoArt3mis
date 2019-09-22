@@ -17,6 +17,7 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
 
     public void UpdateItem(Item item)
     {
+        print("UPDATE ITEM ");
         this.item = item;
         if (this.item != null)
         {
