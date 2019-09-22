@@ -76,4 +76,16 @@ public class Inventory : MonoBehaviour
             Debug.Log("Item removed: " + itemToRemove.title);
         }
     }
+
+    public void DropItem(UIItem selectedItem)
+    {
+        if (selectedItem != null && selectedItem.item != null)
+        {
+            // Remover da lusta de character
+            chacacterItems.Remove(selectedItem.item);
+            
+            // Setar item igual a null no slot do inventário
+            selectedItem.UpdateItem(null);
+        }
+    }
 }
