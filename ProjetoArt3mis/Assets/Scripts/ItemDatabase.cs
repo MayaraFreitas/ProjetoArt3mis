@@ -36,6 +36,11 @@ public class ItemDatabase : MonoBehaviour
                 {
                     { "Value: ", 444 }
                 }),
+            new Item(3, "Gold Ore", "A beaultiful Gold rock.",
+                new Dictionary<string, int>
+                {
+                    { "Value: ", 999 }
+                }),
             new Item(2, "Silver Pick", "A very C# pick.",
                 new Dictionary<string, int>
                 {
