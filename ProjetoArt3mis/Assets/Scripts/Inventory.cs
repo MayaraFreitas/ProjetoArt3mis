@@ -88,4 +88,20 @@ public class Inventory : MonoBehaviour
             selectedItem.UpdateItem(null);
         }
     }
+
+    public void UpdateItem(string oldItemName, string newItemName)
+    {
+        if (string.IsNullOrEmpty(oldItemName) || string.IsNullOrEmpty(newItemName))
+            return;
+
+        Item oldItem = itemDatabase.GetItem(oldItemName);
+        if (oldItem == null)
+            return;
+
+        Item newItem = itemDatabase.GetItem(newItemName);
+        if (newItem == null)
+            return;
+
+        inventoryUI.UpdateItem(oldItem, newItem);
+    }
 }

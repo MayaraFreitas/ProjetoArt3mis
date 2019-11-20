@@ -7,14 +7,14 @@ public class Item
     public string title;
     public string description;
     public Sprite icon;
-    public Dictionary<string, int> stats = new Dictionary<string, int>();
+    public Dictionary<string, string> stats = new Dictionary<string, string>();
 
-    public Item(int id, string title, string description, Dictionary<string, int> stats)
+    public Item(int id, string title, string description, Dictionary<string, string> stats)
     {
         this.id = id;
         this.title = title;
         this.description = description;
-        this.icon = Resources.Load<Sprite>("Sprites/Items/" + title);
+        this.icon = Resources.Load<Sprite>("Sprites/Map/Itens/" + title);
         this.stats = stats;
     }
 
@@ -23,7 +23,7 @@ public class Item
         this.id = item.id;
         this.title = item.title;
         this.description = item.description;
-        this.icon = Resources.Load<Sprite>("Sprites/Items/" + item.title);
+        this.icon = Resources.Load<Sprite>("Sprites/Map/Itens/" + item.title);
         this.stats = item.stats;
     }
 }
