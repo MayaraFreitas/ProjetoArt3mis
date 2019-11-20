@@ -1162,8 +1162,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 235.1986, y: -201.91196}
-  m_SizeDelta: {x: 925, y: 120.2}
+  m_AnchoredPosition: {x: 262.9, y: -162.2}
+  m_SizeDelta: {x: 980.4, y: 199.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &558547698
 MonoBehaviour:
@@ -1178,14 +1178,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 2ed3995bc69d0d14cb2e3c2ed1184281, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2583,6 +2583,7 @@ GameObject:
   - component: {fileID: 1366190085}
   - component: {fileID: 1366190087}
   - component: {fileID: 1366190086}
+  - component: {fileID: 1366190088}
   m_Layer: 0
   m_Name: dialogueZone
   m_TagString: Untagged
@@ -2648,6 +2649,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.98, y: 1.81}
   m_EdgeRadius: 0
+--- !u!114 &1366190088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366190084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cca9bb988e504b1418193c3bb14ecce6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 2
+  startQuest: 1
+  endQuest: 0
 --- !u!1 &1367564201
 GameObject:
   m_ObjectHideFlags: 0
@@ -2682,8 +2698,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 371, y: -35.6}
-  m_SizeDelta: {x: 168.1, y: 25.3}
+  m_AnchoredPosition: {x: 333, y: -43}
+  m_SizeDelta: {x: 192, y: 25.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1367564203
 MonoBehaviour:
@@ -2707,10 +2723,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -3194,10 +3210,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -3230,8 +3246,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.6, y: 17.2}
-  m_SizeDelta: {x: 899.4, y: 68.3}
+  m_AnchoredPosition: {x: 25.9, y: 5.66}
+  m_SizeDelta: {x: 846.98, y: 45.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1565799415
 GameObject:
