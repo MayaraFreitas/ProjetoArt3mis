@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Item
   - InventorySlot
+  - Lake
   layers:
   - Default
   - TransparentFX

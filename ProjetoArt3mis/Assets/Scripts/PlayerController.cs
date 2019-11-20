@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D myRigidbody;
 
     public bool canMove;
+    private bool lakeArea = false;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (lakeArea && Input.GetKeyDown(KeyCode.Q))
+        {
+            inventory.UpdateItem("Balde Vazio", "Balde com Purpura");
+        }
 
         if (!canMove)
         {
@@ -60,6 +66,17 @@ public class PlayerController : MonoBehaviour
         {
             inventory.AddItem(collision.gameObject.name, collision.gameObject);
         }
+        if (collision.gameObject.tag == "Lake")
+        {
+            lakeArea = true;
+        }
+    }
 
+    public void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Lake")
+        {
+            lakeArea = false;
+        }
     }
 }
