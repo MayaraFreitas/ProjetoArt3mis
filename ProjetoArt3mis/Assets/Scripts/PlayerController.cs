@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -10,9 +11,12 @@ public class PlayerController : MonoBehaviour
     private Vector2 lastMove;
 
     private Rigidbody2D myRigidbody;
+    private Text textInfo;
 
     public bool canMove;
     private bool lakeArea = false;
+
+    private const KeyCode actionButton = KeyCode.Q;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +25,7 @@ public class PlayerController : MonoBehaviour
         inventory = GetComponentInParent<Inventory>();
         myRigidbody = GetComponent<Rigidbody2D>();
         canMove = true;
+        textInfo = transform.GetComponentInChildren<Text>();
     }
 
     // Update is called once per frame
@@ -68,12 +73,16 @@ public class PlayerController : MonoBehaviour
         }
         if (collision.gameObject.tag == "Lake")
         {
+            var text = transform.GetComponentInChildren<Text>();
+            text.text = "Q para coletar";
             lakeArea = true;
         }
     }
 
     public void OnTriggerExit2D(Collider2D collision)
     {
+        textInfo.text = string.Empty;
+
         if (collision.gameObject.tag == "Lake")
         {
             lakeArea = false;

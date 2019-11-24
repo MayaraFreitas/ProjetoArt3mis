@@ -65,7 +65,6 @@ public class UICrafitController : MonoBehaviour
         }
 
         List<Recip> recips = craftController.recips;
-
         foreach (Recip recip in recips)
         {
             if (checkRecip(recip, slotItems))
@@ -79,7 +78,18 @@ public class UICrafitController : MonoBehaviour
     private bool checkRecip(Recip recip, List<Item> slotItems)
     {
         List<Item> recipItems = new List<Item>();
-        recip.requestItems.ForEach(r => recipItems.Add(inventory.itemDatabase.GetItem(r.item.name)));
+        foreach (RecipItem recipItem in recip.requestItems)
+        {
+            if (recipItem == null)
+                continue;
+
+            Item item = inventory.itemDatabase.GetItem(recipItem.item.name);
+            if (item != null)
+            {
+                recipItems.Add(item);
+            }
+        }  
+            
         return Helper.AreEquals<Item>(recipItems, slotItems);
     }
 

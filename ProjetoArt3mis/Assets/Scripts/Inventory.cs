@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -9,10 +10,6 @@ public class Inventory : MonoBehaviour
 
     private void Start()
     {
-        AddItem("Diamond Sword");
-        AddItem(1);
-        AddItem(2);
-
         inventoryUI.gameObject.SetActive(false);
     }
 
@@ -98,10 +95,25 @@ public class Inventory : MonoBehaviour
         if (oldItem == null)
             return;
 
+        if (!inventoryUI.uIItems.Select(i => i.item).ToList().Contains(oldItem))
+            return;
+
         Item newItem = itemDatabase.GetItem(newItemName);
         if (newItem == null)
             return;
 
         inventoryUI.UpdateItem(oldItem, newItem);
+    }
+
+    public bool HaveAItem(string itemName)
+    {
+        if (string.IsNullOrEmpty(itemName))
+            return false;
+
+        Item item = itemDatabase.GetItem(itemName);
+        if (item == null)
+            return false;
+
+        return inventoryUI.uIItems.Select(i => i.item).ToList().Contains(item);
     }
 }

@@ -20,14 +20,4 @@ public class CraftController : MonoBehaviour
     {
         public UIItem item;
     }
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
 }

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class QuestObject : MonoBehaviour
 {
@@ -8,18 +6,13 @@ public class QuestObject : MonoBehaviour
     public QuestManager theQM;
 
     public string startText;
+    public string middleText;
     public string endText;
 
     public bool isItemQuest;
+    public int previousMission;
     public string targetItem;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (isItemQuest)
@@ -35,6 +28,14 @@ public class QuestObject : MonoBehaviour
     public void StartQuest()
     {
         theQM.ShowQuestText(startText);
+    }
+
+    public void ShowMiddleText()
+    {
+        if (!string.IsNullOrEmpty(middleText))
+        {
+            theQM.ShowQuestText(middleText);
+        }
     }
 
     public void EndQuest()
