@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2629837414219920918}
   - component: {fileID: 2629837414219920916}
   m_Layer: 8
-  m_Name: Gold Ore
+  m_Name: Carreg Goch
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,8 +70,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8bc5a572a230eb440abb281ecefa7d5e, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: db8cb999aac9e444897a558e2e473c9f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
