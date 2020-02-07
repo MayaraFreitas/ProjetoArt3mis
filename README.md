@@ -1,11 +1,17 @@
 # ProjetoArt3mis
 Jogo desenvolvido na disciplina de Projeto IV.
 
-Autores:
+**Autores:**
 
 [Mayara - Desenvolvedora/Design]
+
 [Leonardo - Desenvolvedor/Design](https://github.com/LZagatto)
+
 [Lucas - Planejamento/Documentação](https://github.com/ldonizete)
+
+**Agradecimento**
+
+[Rodrigo - Design do personagem principal](https://github.com/RodrigoDisselli)
 
 O objetivo do projeto foi aproveitar da oportunidade e adquirir novas hablidades na engine Unity por meio de atividades jamais desenvolvidas pelos participantes como: 
 
@@ -52,5 +58,8 @@ Um mini mapa acompanha o Player enquanto de movimenta, sendo possível ter uma m
 
 ## Arte
 
-Sprites foram confeccionados com cerca de 36 pixels utilizando a ferramenta web PiskelApp para a construção dos objetos, personagens, e o mapa. Os sprites possuem a coloração principalmente azul contrastando com as secundárias vermelha e verde, para causar estranheza ao usuário ao ver cenários e objetos semelhantes aos presentes na terra.
+Sprites foram confeccionados com cerca de 36 pixels utilizando a ferramenta web PiskelApp para a construção dos objetos, personagens, e o mapa. Os sprites possuem a coloração principalmente azul contrastando com as secundárias vermelha e verde, para causar estranheza ao usuário ao ver cenários e objetos semelhantes aos presentes na terra. Por sua vez, a personagem principal recebeu cores mais agradáveis, seu cabelo colorido representa a modernidade e o futurismo não deixando claro o sexo, para que o jogador possa a enxergar como quiser.
+
+
+![Sprites](https://github.com/MayaraFreitas/ProjetoArt3mis/tree/master/ProjetoArt3mis/Img/Sprites.PNG)
 
