@@ -1,5 +1,5 @@
 # ProjetoArt3mis
-Jogo desenvolvido na disciplina de Projeto IV do curso de Engenharia da Computação (2019).
+Jogo desenvolvido na disciplina de Projeto IV no 8 semestre do curso de Engenharia da Computação (2019).
 
 **Autores:**
 
