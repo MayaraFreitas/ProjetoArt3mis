@@ -24,7 +24,7 @@ O objetivo do projeto foi aproveitar da oportunidade e adquirir novas hablidades
 
 O jogo consiste em uma missão apelidada de “Art3mis” onde a tripulação de astronautas em uma nave que sai do planeta Terra, fugindo da poluição e indo em busca de recursos e novos planetas semelhantes ao seu redor, já que a escassez de alimento, e a poluição que o ser humano proporcionou ao planeta, levaram a qualidade de vida na Terra a níveis críticos.
 Durante a exploração eles passam por uma tempestade cósmica que danifica a nave, perdendo total controle sobre ela e ficando à mercê do fluxo do universo.
-Depois de algum tempo, eles se vêem indo em direção á um buraco negro no qual após entrarem percebem que estão novamente no espaço porém com planetas muito diferentes dos que já conheciam. Ainda sem saber o que tinha acontecido, percebem que estão sendo puxados pela gravidade de um planeta duas vezes maior que o planeta Terra. Durante a passagem pela atmosfera alguns equipamentos são danificados, mas no fim conseguem pousar no solo em segurança.
+Depois de algum tempo, eles se veem indo em direção á um buraco negro no qual após entrarem percebem que estão novamente no espaço porém com planetas muito diferentes dos que já conheciam. Ainda sem saber o que tinha acontecido, percebem que estão sendo puxados pela gravidade de um planeta duas vezes maior que o planeta Terra. Durante a passagem pela atmosfera alguns equipamentos são danificados, mas no fim conseguem pousar no solo em segurança.
 
 ![Nave](https://github.com/MayaraFreitas/ProjetoArt3mis/blob/master/ProjetoArt3mis/Img/Nave.PNG)
 
